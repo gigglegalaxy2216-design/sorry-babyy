@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Babyyy ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{background:#fff5f8;font-family:Georgia,serif;color:#7d3452;text-align:center;overflow-x:hidden}
+.page{min-height:100vh;padding:35px 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff5f8,#ffe8f0)}
+.page:nth-child(even){background:linear-gradient(180deg,#ffe8f0,#fff5f8)}h1{font-size:32px;color:#d45b89;margin:15px 0}h2{font-size:25px;color:#c64d7d;margin-bottom:20px}p{line-height:1.8;font-size:16px}
+.small-title{font-size:14px;letter-spacing:3px;color:#c77b9b;text-transform:uppercase}.cat{font-size:100px;margin:20px;animation:bounce 2s infinite}@keyframes bounce{50%{transform:translateY(-8px)}}
+button{background:#e78bb0;color:white;border:0;padding:13px 25px;border-radius:30px;font-size:16px;font-family:Georgia,serif;cursor:pointer;margin:10px;transition:.3s}button:hover{background:#ce5f91;transform:scale(1.05)}
+.card{background:#fffafd;border:1px solid #f3b5ce;border-radius:20px;padding:25px;width:100%;max-width:380px;box-shadow:0 8px 25px #f5c5d8}
+.puzzle{display:grid;grid-template-columns:repeat(3,80px);gap:10px;justify-content:center;margin:25px auto}.tile{width:80px;height:80px;background:#ffe4ef;border:2px solid #f2b5ce;border-radius:15px;font-size:30px;display:flex;align-items:center;justify-content:center;cursor:pointer}.tile:hover{background:#fbd1e2}
+#puzzleMessage{margin:15px;color:#c64d7d}.letter{background:#fffafd;border:2px solid #efb4cf;border-radius:20px;padding:25px;max-width:450px;text-align:left;line-height:1.9;box-shadow:0 5px 20px #f2c4d7}.letter h2{text-align:center}.letter .ending{text-align:center;color:#d63384;font-weight:bold;font-size:19px}
+.surprise-img{background:white;border-radius:20px;padding:20px;margin:20px 0;border:2px dashed #e8a1c0}.flower{font-size:70px}.music-card{background:white;border-radius:20px;padding:25px;width:100%;max-width:350px;box-shadow:0 5px 20px #f2c4d7}.music-icon{font-size:70px;margin:20px}audio{width:100%;margin-top:20px}
+.final{background:linear-gradient(135deg,#f4d9ff,#ffd6e8)}.final h1{font-size:34px}.final .cat{font-size:110px}.heart{position:fixed;bottom:-30px;pointer-events:none;animation:float 6s linear forwards;z-index:10}@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}footer{font-size:12px;padding:15px;color:#c77b9b}
+</style></head><body>
+<section class="page" id="intro"><div class="small-title">A little website made with love</div><h1>I'm So Sorry 💗</h1><p>I know I upset you, and I'm sorry.<br>This little website is my way of saying<br>how much you mean to me.</p><div class="cat">🐱🎀</div><p>Come in, my love ❤️</p><button onclick="goTo('puzzle')">Come in →</button></section>
+<section class="page" id="puzzle"><div class="small-title">A little game for you</div><h2>One heart is missing.<br>Place it 💗</h2><div class="puzzle" id="puzzleGrid"></div><p id="puzzleMessage">Find the missing heart, nana 🥺</p><button onclick="goTo('letter')">Next →</button></section>
+<section class="page" id="letter"><div class="small-title">A note just for you</div><h2>Just For You 💌</h2><div class="letter">
+<p>Nijanga cheppalante, ninnu ila dooram chesukovadam na valla avvatledhu. Nuvvu na life lo entha important oo nenu words lo cheppalenu. Mana madhya em jarigina, ninnu hurt chesina prathi sari nenu nijanga regret avuthunna.</p><br>
+<p>Nen chesina mistakes ni ardham chesukoni, avi repeat avvakunda nannu nenu change chesukovali anukuntunna. Nuvv na meedha pettukunna trust ni malli earn chesukovali anukuntunna.</p><br>
+<p>Manam kalisi unna memories, mana happy moments anni naaku chala special. Nuvvu naatho unna prathi moment ni nenu chala precious ga feel avuthunna. Inka 1 year and 5 months manam kalisi undali ani naaku chala strong ga anipisthundhi.</p><br>
+<p>Ninnu force cheyyalani kaadhu, nee feelings ni respect chesthune chepthunna. Nuvv konchem time teesukoni alochinchu. Nenu nijanga mana relationship ni save chesukovali anukuntunna.</p><br>
+<p>Nuvv ok ante, manam malli fresh ga start cheddham. Ee sari mana relationship ni inka strong ga, trust tho, understanding tho build cheskundham.</p><br>
+<p>Nuvv naak chala important. Ninnu lose avvalani nenu assalu anukovatledhu. I still want us to be together. ❤️</p><br><p class="ending">Babyyy, I love you so so much nana ❤️🥺</p></div><button onclick="goTo('surprise')">Next →</button></section>
+<section class="page" id="surprise"><div class="small-title">Little surprises</div><h2>For You, My Love 🌸</h2><div class="surprise-img"><div class="flower">🌷🌸🌷</div><h2>Flowers For You</h2><p>These flowers are for the most special person in my life.</p></div><div class="card"><div class="cat">🐻💗</div><p>No matter what happens, our memories will always be special to me.</p></div><button onclick="goTo('music')">Next →</button></section>
+<section class="page" id="music"><div class="small-title">Songs that feel like us</div><h2>Our Little Playlist 🎵</h2><div class="music-card"><div class="music-icon">🎧💗</div><h2>Our Special Song</h2><p>A little music for you, nana.</p><audio controls><source src="oursong.mp3" type="audio/mpeg">Your browser does not support audio.</audio><p style="font-size:12px;margin-top:15px">Optional: put your favourite MP3 in this folder and name it oursong.mp3.</p></div><button onclick="goTo('final')">One Last Thing ❤️</button></section>
+<section class="page final" id="final"><div class="small-title">For my love ❤️</div><h1>I Love You<br>More Than Anything</h1><div class="cat">🐱💗🐻</div><p>If you smiled even once while going through this, it means a lot to me.</p><br><p>Nuvvu na life lo chala special nana.<br>I still want us to be together.</p><br><h2>Thank You For Everything 💗</h2><p>Babyyy, I love you so so much nana ❤️</p><button onclick="hearts()">Send More Love 💕</button></section>
+<footer>Made with love, just for you ❤️</footer>
+<script>
+function goTo(id){document.getElementById(id).scrollIntoView({behavior:"smooth"})}
+const grid=document.getElementById("puzzleGrid"),puzzle=["💗","💗","💗","💗","","💗","💗","💗","💗"];
+puzzle.forEach((heart,index)=>{const tile=document.createElement("div");tile.className="tile";tile.innerText=heart||"❔";tile.onclick=()=>{if(index===4){tile.innerText="💗";document.getElementById("puzzleMessage").innerText="Yayyy! You found the missing heart ❤️";hearts()}else document.getElementById("puzzleMessage").innerText="Try another one, nana 🥺"};grid.appendChild(tile)});
+function hearts(){for(let i=0;i<15;i++){const heart=document.createElement("div");heart.className="heart";heart.innerText=["❤️","💗","💕","💖","💜"][Math.floor(Math.random()*5)];heart.style.left=Math.random()*100+"vw";heart.style.fontSize=Math.random()*25+15+"px";heart.style.animationDuration=Math.random()*3+3+"s";document.body.appendChild(heart);setTimeout(()=>heart.remove(),6000)}}
+setInterval(()=>{const heart=document.createElement("div");heart.className="heart";heart.innerText="💗";heart.style.left=Math.random()*100+"vw";document.body.appendChild(heart);setTimeout(()=>heart.remove(),6000)},1200);
+</script></body></html>
